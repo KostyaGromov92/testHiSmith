@@ -1,0 +1,183 @@
+.contact {
+  width: 100%;
+  background-color: #f7f7f7;
+  padding: 3.8em 0;
+  box-sizing: border-box;
+
+  &__wrap {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-family: $openSans;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color: #323232;
+    margin-bottom: 1.9rem;
+    text-align: center;
+  }
+
+  &__text {
+    font-family: $openSans;
+    font-weight: 300;
+    color: #919191;
+    line-height: 1.8em;
+    text-align: center;
+    margin-bottom: 3.8em;
+
+  }
+
+  &__wrap-block {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__details {
+    width: 48%;
+    margin-right: 3%;
+
+    &__title {
+      font-family: $openSans;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 1.3em;
+      color: #323232;
+      margin-bottom: 2.1rem;
+    }
+
+    &__adress {
+      font-family: $fontMyriadRegular;
+      color: #919191;
+      margin-bottom: 1.6em;
+
+      i {
+        color: #ff0000;
+        font-size: 1.5em;
+        margin-right: 1.2rem;
+      }
+    }
+
+    &__phone {
+      font-family: $fontMyriadRegular;
+      color: #919191;
+      margin-bottom: 1.6em;
+
+      i {
+        color: #ff0000;
+        font-size: 1.5em;
+        margin-right: 1rem;
+      }
+    }
+
+    &__email {
+      font-family: $fontMyriadRegular;
+      color: #919191;
+      margin-bottom: 1.6em;
+
+      i {
+        color: #ff0000;
+        font-size: 1.5em;
+        margin-right: .8rem;
+      }
+    }
+
+    &__text {
+      font-family: $openSans;
+      font-weight:300;
+      color: #919191;
+      line-height: 1.8em;
+      text-align: justify;
+    }
+  }
+
+  &__form-block {
+    width: 50%;
+
+    &__title {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 1.3em;
+      color: #323232;
+      margin-bottom: 2.1rem;
+    }
+
+    &__input {
+      max-width: 269px;
+      width: 45.4%;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 300;
+      font-size: 0.88em;
+      text-transform: uppercase;
+      color: #919191;
+      outline: none;
+      height: 40px;
+      line-height: 40px;
+      box-sizing: border-box;
+      border: 1px solid #cccccc;
+      padding: 0 0.88em;
+
+      &:first-child {
+        margin-right: 1.9em;
+      }
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      &:focus:invalid {
+        border: 1px solid #e46a6a;
+        box-shadow: inset 0px 0px 13px rgba(228,106,106,.75);
+      }
+    }
+
+    input[type="text"],
+    input[type="email"]{
+      &:valid {
+        border: 1px solid #1C9963;
+      }
+    }
+
+    &__textarea {
+      display: block;
+      box-sizing: border-box;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 300;
+      font-size: 0.88em;
+      padding: 0.88em;
+      border: 1px solid #cccccc;
+      resize: none;
+      width: 96%;
+      margin-top: 1.3em;
+      height: 150px;
+      outline: none;
+      color: #919191;
+    }
+
+    &__input[type='submit'] {
+      background-color: #ff0000;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 1.5em;
+      color: #ffffff;
+      box-sizing: border-box;
+      height: 55px;
+      line-height: 55px;
+      padding: 0 4.3rem;
+      max-width: initial;
+      width: initial;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      margin-top: 1.6rem;
+      transition: all .2s ease;
+
+      &:hover {
+        box-shadow:inset 0px 0px 20px rgba(0,0,0,.5);
+        transition: all .2s ease;
+      }
+    }
+  }
+}

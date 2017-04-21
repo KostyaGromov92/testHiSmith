@@ -1,0 +1,60 @@
+//@import "fonts";
+@import "animation-skills";
+
+$openSans : 'Open Sans', sans-serif;
+
+.skills {
+
+
+  padding: 3.8em 0;
+  box-sizing: border-box;
+  background-color: #f7f7f7;
+
+  &__wrap {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-family: $openSans;
+    text-transform: uppercase;
+    color: #323232;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.9rem;
+  }
+
+  &__text {
+    font-family: $openSans;
+    font-weight: 300;
+    color: #919191;
+    line-height: 1.8em;
+    text-align: center;
+    margin-bottom: 3.8em;
+  }
+
+  &__block-wrap {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    &__item {
+      &:nth-child(even) {
+        img {
+          animation: rotateEven 1.5s infinite alternate linear;
+          max-width: 100%;
+          height: auto;
+        }
+      }
+
+      &:nth-child(odd) {
+        img {
+          animation: rotateOdd 1.5s infinite alternate linear;
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}

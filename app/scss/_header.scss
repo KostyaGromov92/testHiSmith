@@ -1,0 +1,92 @@
+//@import "fonts";
+
+$fontAwesome: "FontAwesome";
+$fontMyriadRegular : 'MyriadProRegular';
+$openSans : 'Open Sans', sans-serif;
+
+.header {
+  width: 100%;
+  height: 100vh;
+  //background-image: url(../img/header-bg.png);
+  //background-size: cover;
+  //background-position: center;
+  padding-top: 1.8em;
+  box-sizing: border-box;
+  position: relative;
+
+  &__wrap {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+
+  &__social-wrap {
+    text-align: right;
+
+    &__item {
+      display: inline-block;
+      margin-right: 0.94em;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &__link {
+      text-decoration: none;
+
+      i {
+        font-family: $fontAwesome;
+        font-size: 1.3em;
+        color: #ffffff;
+        transition: all .5s ease;
+        
+        &:hover {
+          color: #cb2e2e;
+          transition: all .5s ease;
+        }
+      }
+    }
+  }
+
+  &__text-block {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    text-align: center;
+  }
+
+  &__title {
+    font-family: $fontMyriadRegular;
+    font-size: 2.3em;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    
+    span {
+      color: #cb2e2e;
+    }
+  }
+
+  &__btn {
+    text-transform: uppercase;
+    font-family: $openSans;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #ffffff;
+    padding: 1.1rem 1.6rem;
+    box-sizing: border-box;
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 2px;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+    cursor: pointer;
+    
+    &:hover {
+      background-color: #cb2e2e;
+      transition: all .5s ease;
+    }
+  }
+}

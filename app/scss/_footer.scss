@@ -1,0 +1,37 @@
+.footer {
+  padding:1.1em 0;
+  box-sizing: border-box;
+  &__wrap {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+
+  &__social-wrap {
+    text-align: right;
+
+    &__item {
+      display: inline-block;
+      margin-right: 0.94em;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &__link {
+      text-decoration: none;
+
+      i {
+        font-family: "FontAwesome";
+        font-size: 1.3em;
+        color: #ff0000;
+        transition: all .2s ease;
+
+        &:hover {
+          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+          transition: all .2s ease;
+        }
+      }
+    }
+  }
+}

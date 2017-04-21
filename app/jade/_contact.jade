@@ -1,0 +1,24 @@
+section.contact
+    .contact__wrap
+        h2.contact__title Contact Us
+        p.contact__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur at dolore earum fugiat incidunt nisi nulla numquam praesentium quasi quibusdam, repellat reprehenderit unde vitae. Aspernatur at dolore earum fugiat incidunt nisi nulla numquam praesentium quasi quibusdam.
+        .contact__wrap-block
+            .contact__details
+                h2.contact__details__title Contact details
+                p.contact__details__adress
+                    i.fa.fa-map-marker
+                    | Street / House / Zip
+                p.contact__details__phone
+                    i.fa.fa-phone
+                    | 111-111-1111
+                p.contact__details__email
+                    i.fa.fa-envelope
+                    | email@1.com
+                p.contact__details__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur at dolore earum fugiat incidunt nisi nulla numquam praesentium quasi quibusdam, repellat reprehenderit unde vitae. Aspernatur at dolore earum fugiat incidunt nisi nulla numquam praesentium quasi quibusdam.
+            .contact__form-block
+                h2.contact__form-block__title Send us a message
+                form.contact__form-block__form
+                    input.contact__form-block__input(type='text' name='name' maxlength='15' placeholder='Name' pattern="[a-zA-Z]+" title='Max lenght 15 charset and only EN letters' required)
+                    input.contact__form-block__input(type='email' name='email' pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title='Example : gromovkostya92@gmail.com' placeholder='Email' required)
+                    textarea.contact__form-block__textarea(name='textarea' placeholder='Subject')
+                    input.contact__form-block__input(type='submit' name='submit' value='Send')
